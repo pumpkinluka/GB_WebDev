@@ -3,6 +3,34 @@
     <head>
         <title>First Web Page</title>
         <meta charset="UTF-8">
+        <style>
+            body{
+                color:rgb(190, 82, 132);
+                background-color:rgb(253, 230, 242);
+            }
+            h1{
+                color:rgb(146, 41, 102);
+                text-align:center;
+                text-decoration:underline;
+            }
+            h3{
+                color:rgb(185, 52, 119);
+            }
+            li{
+                color:rgb(201, 102, 148);
+            }
+            .sweet{
+                width: 20px;
+            }
+            .classic{
+                width:100px;
+                height:auto;
+            }
+            .gothic{
+                width:100px;
+                height:auto;
+            }
+        </style>
     </head>
     <body>
         <h1>Lolita Fashion</h1>
@@ -16,16 +44,19 @@
         <p>Lolita has a variety of substyles, each unique in their own way.<br>However, it consists of three main substyles:</p>
             <ul>
                 <li><b>Sweet Lolita</b></li>
-                <div><img src="Sweet_Lolita_Fashion.jpg" alt="girl dressed in sweet lolita" width="150px">
-                <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Sweet_Lolita_Fashion.jpg" target="_blank">Wikimedia Commons</a></p></div>
+                <div class="sweet">
+                    <img src="Sweet_Lolita_Fashion.jpg" alt="girl dressed in sweet lolita">
+                </div>
+                
+                <div><p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Sweet_Lolita_Fashion.jpg" target="_blank">Wikimedia Commons</a></p></div>
 
                 <li><b>Classic Lolita</b></li>
-                <div><img src="classic_lolita.jpg" alt="girl dressed in classic lolita" width="150px"> </div>
-                <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Lolita_girl_handing_out_candy_to_children_at_Ginza_Mall_Beijing_(20201224180934).jpg" target="_blank">Wikimedia Commons</a></p></div>
+                <div class="classic"><img src="classic_lolita.jpg" alt="girl dressed in classic lolita"></div>
+                <div><p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Lolita_girl_handing_out_candy_to_children_at_Ginza_Mall_Beijing_(20201224180934).jpg" target="_blank">Wikimedia Commons</a></p></div>
 
                 <li><b>Gothic Lolita</b></li>
-                <div><img src="Gothic_lolita_dress.jpg" alt="girl dressed in gothic lolita" width="150px"> </div>
-                <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Gothic_lolita_dress.jpg" target="_blank">Wikimedia Commons</a></p></div>
+                <div class="gothic"><img src="Gothic_lolita_dress.jpg" alt="girl dressed in gothic lolita"></div>
+                <div><p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Gothic_lolita_dress.jpg" target="_blank">Wikimedia Commons</a></p></div>
             </ul>
         <p>These define the fashion for the most part, but again, there are more substyles.<br>Notable examples of other substyles include:</p>
             <ul>
