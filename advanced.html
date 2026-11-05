@@ -3,14 +3,41 @@
     <head>
         <title>HTML Advanced Notes</title>
         <meta charset="UTF-8">
+        <style>
+            /* Cascading Style Sheets 
+            1. Selector -> says what to change
+            2. Declaration
+                a. Property -> what about the element to change
+                b. Value -> How to change it
+            */
+            body{
+                color:rgb(148, 27, 83);
+                background-color:rgb(255, 227, 240);
+                border: solid 3px #ffffff;
+            }
+            h1{
+                text-align: center;
+            }
+            #even{
+                color:rgb(59, 42, 29);
+                text-decoration:underline;
+            }
+            .lists{
+                width: 50%;
+                background-color:rgb(212, 255, 225);
+                border-radius: 5px;
+                font-size: 1rem;
+            }
+        </style>
     </head>
     <body>
         <h1>HTML Advanced Notes</h1>
+        <div class="lists">
         <h3>Lists:</h3>
         <ol type="I">
-            <li>Chiikawa</li>
+            <li id="even">Chiikawa</li>
             <li>Hachiware</li>
-            <li>Usagi</li>
+            <li id="even">Usagi</li>
             <li>Momonga</li>
         </ol>
         <ul>
@@ -27,6 +54,7 @@
             <dd>Christmas</dd>
             <dd>New Years Eve</dd>
         </dl>
+        </div>
         <h3>Attributes:</h3>
         <div>
         <a href="https://www.thekitchn.com/how-to-make-chocolate-covered-strawberries-cooking-lessons-from-the-kitchn-202817" target="_blank"><img src="https://www.naturevalley.co.uk/wp-content/uploads/2023/11/autumn-1_article_1.jpg" alt="fat brown hedgehog" width="250px"></a>
