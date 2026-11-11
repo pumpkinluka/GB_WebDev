@@ -4,23 +4,35 @@
         <title>First Web Page</title>
         <meta charset="UTF-8">
         <style>
+            @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Spectral:wght@200&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+
             body{
                 color:rgb(190, 82, 132);
                 background-color:rgb(253, 230, 242);
+                font-family:'Spectral', serif;
+                font-weight: 600;
             }
             h1{
                 color:rgb(146, 41, 102);
                 text-align:center;
                 text-decoration:underline;
+                font-family: "Lugrasimo", cursive;
             }
             h3{
                 color:rgb(185, 52, 119);
+                font-family: "Lugrasimo", cursive;
             }
             li{
                 color:rgb(201, 102, 148);
+                font-family:'Spectral', serif;
             }
             img{
                 width:180px
+            }
+            .poop{
+                display: flex;
+                flex-direction: column-reverse;
             }
         </style>
     </head>
@@ -34,26 +46,27 @@
 
         <h3>𑣲 . Substyles and Brands</h3>
         <p>Lolita has a variety of substyles, each unique in their own way.<br>However, it consists of three main substyles:</p>
+        <div class="poop">
             <ul>
+                <div>
                 <li><b>Sweet Lolita</b></li>
-                <div>
-                    <img src="Sweet_Lolita_Fashion.jpg" alt="girl dressed in sweet lolita">
+                <img src="Sweet_Lolita_Fashion.jpg" alt="girl dressed in sweet lolita">
+                <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Sweet_Lolita_Fashion.jpg" target="_blank">Wikimedia Commons</a></p>
                 </div>
-                
-                <div><p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Sweet_Lolita_Fashion.jpg" target="_blank">Wikimedia Commons</a></p></div>
 
+                <div>
                 <li><b>Classic Lolita</b></li>
-                <div>
-                    <img src="classic_lolita.jpg" alt="girl dressed in classic lolita">
+                <img src="classic_lolita.jpg" alt="girl dressed in classic lolita">
+                <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Lolita_girl_handing_out_candy_to_children_at_Ginza_Mall_Beijing_(20201224180934).jpg" target="_blank">Wikimedia Commons</a></p>
                 </div>
-                <div><p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Lolita_girl_handing_out_candy_to_children_at_Ginza_Mall_Beijing_(20201224180934).jpg" target="_blank">Wikimedia Commons</a></p></div>
 
-                <li><b>Gothic Lolita</b></li>
                 <div>
-                    <img src="Gothic_lolita_dress.jpg" alt="girl dressed in gothic lolita">
+                <li><b>Gothic Lolita</b></li>
+                <img src="Gothic_lolita_dress.jpg" alt="girl dressed in gothic lolita">
+                <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Gothic_lolita_dress.jpg" target="_blank">Wikimedia Commons</a></p>
                 </div>
-                <div><p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Gothic_lolita_dress.jpg" target="_blank">Wikimedia Commons</a></p></div>
             </ul>
+        </div>
         <p>These define the fashion for the most part, but again, there are more substyles.<br>Notable examples of other substyles include:</p>
             <ul>
                 <li>Hime Lolita</li>
