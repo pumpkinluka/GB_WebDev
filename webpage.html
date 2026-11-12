@@ -12,16 +12,21 @@
                 background-color:rgb(253, 230, 242);
                 font-family:'Spectral', serif;
                 font-weight: 600;
+                margin: 5px;
+                padding: 15px;
+                border: 1px solid rgb(185, 52, 119);
             }
             h1{
                 color:rgb(146, 41, 102);
                 text-align:center;
                 text-decoration:underline;
                 font-family: "Lugrasimo", cursive;
+                margin: 20px;
             }
             h3{
                 color:rgb(185, 52, 119);
                 font-family: "Lugrasimo", cursive;
+                padding: 5px;
             }
             li{
                 color:rgb(201, 102, 148);
@@ -30,9 +35,26 @@
             img{
                 width:180px
             }
-            .poop{
+            .cute{
                 display: flex;
-                flex-direction: column-reverse;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 75px;
+            }
+            #sweet{
+                margin: 10px;
+                border: 2px solid rgb(185, 52, 119);
+            }
+            #classic{
+                width: 240px;
+                margin: 10px;
+                border: 2px solid rgb(185, 52, 119);
+            }
+            #gothic{
+                width: 212px;
+                margin: 10px;
+                border: 2px solid rgb(185, 52, 119);
             }
         </style>
     </head>
@@ -46,27 +68,27 @@
 
         <h3>𑣲 . Substyles and Brands</h3>
         <p>Lolita has a variety of substyles, each unique in their own way.<br>However, it consists of three main substyles:</p>
-        <div class="poop">
             <ul>
-                <div>
-                <li><b>Sweet Lolita</b></li>
-                <img src="Sweet_Lolita_Fashion.jpg" alt="girl dressed in sweet lolita">
-                <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Sweet_Lolita_Fashion.jpg" target="_blank">Wikimedia Commons</a></p>
-                </div>
+                <div class="cute">
+                    <div>
+                    <li><b>Sweet Lolita</b></li>
+                    <img id="sweet" src="Sweet_Lolita_Fashion.jpg" alt="girl dressed in sweet lolita">
+                    <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Sweet_Lolita_Fashion.jpg" target="_blank">Wikimedia Commons</a></p>
+                    </div>
 
-                <div>
-                <li><b>Classic Lolita</b></li>
-                <img src="classic_lolita.jpg" alt="girl dressed in classic lolita">
-                <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Lolita_girl_handing_out_candy_to_children_at_Ginza_Mall_Beijing_(20201224180934).jpg" target="_blank">Wikimedia Commons</a></p>
-                </div>
+                    <div>
+                    <li><b>Classic Lolita</b></li>
+                    <img id="classic" src="classic_lolita.jpg" alt="girl dressed in classic lolita">
+                    <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Lolita_girl_handing_out_candy_to_children_at_Ginza_Mall_Beijing_(20201224180934).jpg" target="_blank">Wikimedia Commons</a></p>
+                    </div>
 
-                <div>
-                <li><b>Gothic Lolita</b></li>
-                <img src="Gothic_lolita_dress.jpg" alt="girl dressed in gothic lolita">
-                <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Gothic_lolita_dress.jpg" target="_blank">Wikimedia Commons</a></p>
+                    <div>
+                    <li><b>Gothic Lolita</b></li>
+                    <img id="gothic" src="Gothic_lolita_dress.jpg" alt="girl dressed in gothic lolita">
+                    <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Gothic_lolita_dress.jpg" target="_blank">Wikimedia Commons</a></p>
+                    </div>
                 </div>
             </ul>
-        </div>
         <p>These define the fashion for the most part, but again, there are more substyles.<br>Notable examples of other substyles include:</p>
             <ul>
                 <li>Hime Lolita</li>
