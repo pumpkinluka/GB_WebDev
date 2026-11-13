@@ -56,6 +56,13 @@
                 margin: 10px;
                 border: 2px solid rgb(185, 52, 119);
             }
+            button{
+                margin-top: 10px;
+                padding: 5px;
+                background-color:rgb(252, 197, 225);
+                color:rgb(185, 52, 119);
+                border-color:rgb(185, 52, 119);
+            }
         </style>
     </head>
     <body>
@@ -72,20 +79,20 @@
                 <div class="cute">
                     <div>
                     <li><b>Sweet Lolita</b></li>
-                    <img id="sweet" src="Sweet_Lolita_Fashion.jpg" alt="girl dressed in sweet lolita">
-                    <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Sweet_Lolita_Fashion.jpg" target="_blank">Wikimedia Commons</a></p>
+                    <img id="sweet" src="Sweet_Lolita_Fashion.jpg" alt="girl dressed in sweet lolita" onmouseover="rotate()">
+                    <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Sweet_Lolita_Fashion.jpg" target="_blank"> Wikimedia Commons</a></p>
                     </div>
 
                     <div>
                     <li><b>Classic Lolita</b></li>
                     <img id="classic" src="classic_lolita.jpg" alt="girl dressed in classic lolita">
-                    <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Lolita_girl_handing_out_candy_to_children_at_Ginza_Mall_Beijing_(20201224180934).jpg" target="_blank">Wikimedia Commons</a></p>
+                    <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Lolita_girl_handing_out_candy_to_children_at_Ginza_Mall_Beijing_(20201224180934).jpg" target="_blank"> Wikimedia Commons</a></p>
                     </div>
 
                     <div>
                     <li><b>Gothic Lolita</b></li>
                     <img id="gothic" src="Gothic_lolita_dress.jpg" alt="girl dressed in gothic lolita">
-                    <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Gothic_lolita_dress.jpg" target="_blank">Wikimedia Commons</a></p>
+                    <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Gothic_lolita_dress.jpg" target="_blank"> Wikimedia Commons</a></p>
                     </div>
                 </div>
             </ul>
@@ -103,6 +110,24 @@
                 <li>Baby The Stars Shine Bright</li>
                 <li>Metamorphose Temps de Fille</li>
             </ul>
+        <button onclick="changeColor()">Click Me!</button>
+        <script>
+            let images = ["classic lolita.jpg", "Gothic_lolita_dress.jpg", "Sweet_Lolita_Fashion.jpg", "cute cat picture.webp"]
+            let currentImage = 0
+            function rotate(){
+                currentImage += 1
+                 if (currentImage > 3){
+                    currentImage = 0
+                 }
+                document.getElementById("sweet").src = images[curentImage]
+            }
+            function showhide(){
+
+            }
+            function showHide(){
+             
+            }
+        </script>
     </body>
 </html>
 
