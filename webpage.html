@@ -110,7 +110,12 @@
                 <li>Baby The Stars Shine Bright</li>
                 <li>Metamorphose Temps de Fille</li>
             </ul>
-        <button onclick="changeColor()">Click Me!</button>
+        <div id="para">
+        <p>here is the other paragraph that im GOING to write trust me</p>
+         <img id="gothic" src="Gothic_lolita_dress.jpg" alt="girl dressed in gothic lolita">
+        </div>
+
+        <button onclick="changeColor()">Show More</button>
         <script>
             let images = ["classic lolita.jpg", "Gothic_lolita_dress.jpg", "Sweet_Lolita_Fashion.jpg", "cute cat picture.webp"]
             let currentImage = 0
@@ -119,13 +124,17 @@
                  if (currentImage > 3){
                     currentImage = 0
                  }
-                document.getElementById("sweet").src = images[curentImage]
-            }
-            function showhide(){
-
+                document.getElementById("sweet").src = images[currentImage]
             }
             function showHide(){
-             
+                let item = document.getElementById("para")
+                if(item.style.display == "flex"){
+                    item.style.display="none"
+                    document.getElementById("text").innerHTML = "Show More"
+                }else{
+                    item.style.display="flex"
+                    document.getElementById("text").innerHTML = "Show Less"
+                }
             }
         </script>
     </body>
