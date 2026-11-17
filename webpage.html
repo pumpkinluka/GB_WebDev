@@ -56,6 +56,17 @@
                 margin: 10px;
                 border: 2px solid rgb(185, 52, 119);
             }
+            #pink{
+               border: 2px solid rgb(185, 52, 119);
+               align-self: flex-start;
+            }
+            #para{
+                display:none;
+                flex-direction:column;
+            }
+            #move{
+                max-width: 50%;
+            }
             button{
                 margin-top: 10px;
                 padding: 5px;
@@ -79,7 +90,7 @@
                 <div class="cute">
                     <div>
                     <li><b>Sweet Lolita</b></li>
-                    <img id="sweet" src="Sweet_Lolita_Fashion.jpg" alt="girl dressed in sweet lolita" onmouseover="rotate()">
+                    <img id="sweet" src="Sweet_Lolita_Fashion.jpg" alt="girl dressed in sweet lolita">
                     <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Sweet_Lolita_Fashion.jpg" target="_blank"> Wikimedia Commons</a></p>
                     </div>
 
@@ -111,20 +122,22 @@
                 <li>Metamorphose Temps de Fille</li>
             </ul>
         <div id="para">
-        <p>here is the other paragraph that im GOING to write trust me</p>
-         <img id="gothic" src="Gothic_lolita_dress.jpg" alt="girl dressed in gothic lolita">
+        <h3>𑣲 . Appeal and Culture</h3>
+        <p id="move">Lolita fashion can be seen as a noncompliance to social norms, and/or can be also be a form of escapism, either by returning to more "childish" clothes, or a way to form an ideal fantasy identity. This does not dictate why all Lolitas enjoy the fashion, as some simply just find it fun or want to express themselves. There are also meetings, usually hosted in public spaces like a park or cafe, or in a members' house, as a way for Lolitas to meet up with each other. There is so much more to the fashion that I didn't bring up, so keep scouring the internet if you want more info on lolita fashion.<br><br>↓ Hover your mouse over this image!! ↓</p>
+         <img id="pink" src="pink_lolita.jpg" alt="girl dressed in pink lolita" onmouseover="rotate()">
+         <p>Images from: Wikipedia Commons and Flickr</p>
         </div>
 
-        <button onclick="changeColor()">Show More</button>
+        <button id="text" onclick="showHide()">Show More</button>
         <script>
-            let images = ["classic lolita.jpg", "Gothic_lolita_dress.jpg", "Sweet_Lolita_Fashion.jpg", "cute cat picture.webp"]
+            let images = ["pink_lolita.jpg", "liminal lolita.jpg", "blue stripes.jpg", "floral lolita.jpg"]
             let currentImage = 0
             function rotate(){
                 currentImage += 1
                  if (currentImage > 3){
                     currentImage = 0
                  }
-                document.getElementById("sweet").src = images[currentImage]
+                document.getElementById("pink").src = images[currentImage]
             }
             function showHide(){
                 let item = document.getElementById("para")
