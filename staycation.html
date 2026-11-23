@@ -6,19 +6,43 @@
         <style>
             body{
                 background-color: rgb(240, 222, 217);
+                border: 10px white;
+                margin: 10px;
+                padding: 15px;
+                color:rgb(102, 74, 61);
             }
             h1{
                 text-align: center;
                 font-size:350%;
+                color:rgb(82, 63, 54);
+            }
+            h2{
+                color:rgb(90, 66, 55);
+            }
+            img{
+               border: 5px solid white; 
+               width: 20%
+            }
+             button{
+                margin-top: 15px;
+                margin-bottom: 15px;
+                padding: 5px;
+                background-color: rgb(224, 204, 199);
+                color:rgb(102, 74, 61);
+                border-color: rgb(102, 74, 61);
             }
             #hello{
                 max-width: 50%;
             }
             .snowy{
+                flex-direction: row;
+            }
+            .images{
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 align-items: flex-start;
                 justify-content: flex-start;
+                gap: 75px;
             }
             #resort{
                 width: 500px;
@@ -32,24 +56,20 @@
                 width: 500px;
                 border: 5px solid white;
             }
-
+            #special{
+                display: none;
+                flex-direction: column;
+            }
         </style>
     </head>
     <body>
         <h1>Deer Valley Resort</h1>
         
         <div class="snowy">
-        <img id="resort" src="deer.jpg" alt="Stein Eriksen Lodge at Deer Valley Resort">
-        <p>Image from:<a href="https://grandhotelsoftheworld.com/steineriksenlodgedeervalley/" target="_blank"> Grand Hotels</a></p>
-        <img id="rich" src="images.jpg" alt="rich deer lodge at night with rich lights">
-        <p>Image from:<a href="https://www.flickr.com/photos/tkellyphoto/5426415675" target="_blank"> Flickr</a></p>
-        <img id="buildings" src="richbumresort.jpg" alt="building complexes covered in snow">
-        <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Deervalleyutah_0209.jpg" target="_blank"> Wikimedia Commons</a></p>
-        
         <div id="hello">
-            <h2>What and Why?</h2>
+            <h2>❅. ݁ ∗･ What and Why?</h2>
             <p>Deer Valley is a luxury ski-only resort located in Park City, Utah, and prohibits snowboarding. It has a large appeal to the ski community by being one of the only in the nation to be exclusively ski-only. It includes six mountains and six bowls and 4,300 acres of skiable area, as well as including a modern, high-speed lift system. It's a great vacation spot for luxury dining, service, and housing/lodging, and especially for its activities and ski oriented resort.</p>
-            <h2>Reasons to go there!:</h2>
+            <h2>❅. ݁ ∗･ Reasons to go there! :</h2>
             <ol>
                 <li>Skier-only and catered to skiers</li>
                 <li>Year-round activities</li>
@@ -59,7 +79,52 @@
                 <li>Elite lodging and hotel options</li>
             </ol>
         </div>
+        <div id="special">
+            <h2>❅. ݁ ∗･ more info</h2>
+            <p>this is going to be more info trust</p>
+            <img id="ruby" src="ruby chairlift.jpg" alt="ruby chairlift at deer valley" onmouseover="rotate()">
+         <p>Images from: Wikipedia Commons and Flickr</p>
         </div>
-       
+
+        <button id="text" onclick="showHide()">Show More</button>
+
+        <div class="images">
+            <div>
+            <img id="resort" src="deer.jpg" alt="Stein Eriksen Lodge at Deer Valley Resort">
+            <p>Image from:<a href="https://grandhotelsoftheworld.com/steineriksenlodgedeervalley/" target="_blank"> Grand Hotels</a></p>
+            </div>
+
+            <div>
+            <img id="rich" src="images.jpg" alt="rich deer lodge at night with rich lights">
+            <p>Image from:<a href="https://www.flickr.com/photos/tkellyphoto/5426415675" target="_blank"> Flickr</a></p>
+            </div>
+
+            <div>
+            <img id="buildings" src="richbumresort.jpg" alt="building complexes covered in snow">
+            <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Deervalleyutah_0209.jpg" target="_blank"> Wikimedia Commons</a></p>
+            </div>
+        </div>
+        </div>
+        <script>
+             let images = ["ruby chairlift.jpg", "skiing.jpg", "wthflickr.jpg"]
+            let currentImage = 0
+            function rotate(){
+                currentImage += 1
+                 if (currentImage > 2){
+                    currentImage = 0
+                 }
+                document.getElementById("ruby").src = images[currentImage]
+            }
+            function showHide(){
+                let item = document.getElementById("special")
+                if(item.style.display == "flex"){
+                    item.style.display="none"
+                    document.getElementById("text").innerHTML = "Show More"
+                }else{
+                    item.style.display="flex"
+                    document.getElementById("text").innerHTML = "Show Less"
+                }
+            }
+        </script>
     </body>
 </html>
